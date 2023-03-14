@@ -18,7 +18,6 @@
             <strong>Zipcode: </strong>{{ custumer_record.zipcode }}<br/>
             <strong>Created At: </strong>{{ custumer_record.created_at }}<br/>
             <strong>ID: </strong>{{ custumer_record.id }}<br/>
-
         </p>
       </div>
     </div>
@@ -28,5 +27,6 @@
 
  <a href="{% url 'delete_record' custumer_record.id %}" class="btn btn-danger">Delete</a>
 
+ <a href="{% url 'update_record' custumer_record.id %}" class="btn btn-secondary">Update Record</a>
 
 {% endblock %}
